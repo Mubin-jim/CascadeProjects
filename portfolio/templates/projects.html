@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<div class="projects-section">
+    <h1>My Projects</h1>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>A web application built with Flask and Python</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>SQLite</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Data analysis and visualization project</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>Matplotlib</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Machine learning application</p>
+            <div class="project-tech">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>Scikit-learn</span>
+            </div>
+            <a href="#" class="project-link">View Project</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

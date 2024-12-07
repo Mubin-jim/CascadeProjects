@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block title %}Notes{% endblock %}
+
+{% block content %}
+<div class="notes-container">
+    <h1>Notes Library</h1>
+    
+    <!-- Upload Section -->
+    <div class="upload-section">
+        <h2>Upload New Note</h2>
+        <form action="{{ url_for('upload_note') }}" method="post" enctype="multipart/form-data" class="upload-form">
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter note title" required>
+            </div>
+            <div class="form-group">
+                <label for="file">File (PDF, JPG, JPEG, PNG):</label>
+                <input type="file" id="file" name="file" accept=".pdf,.jpg,.jpeg,.png" required>
+            </div>
+            <button type="submit" class="upload-btn">
+                <span class="btn-icon">📤</span> Upload Note
+            </button>
+        </form>
+    </div>
+
+    <!-- Notes List -->
+    <div class="notes-list">
+        <h2>Available Notes</h2>
+        {% if notes %}
+            <div class="notes-grid">
+                {% for note in notes %}
+                <div class="note-card">
+                    <div class="note-icon">
+                        {% if note.file_type == 'pdf' %}
+                            📄
+                        {% else %}
+                            🖼️
+                        {% endif %}
+                    </div>
+                    <div class="note-info">
+                        <h3>{{ note.title }}</h3>
+                        <p>Type: {{ note.file_type.upper() }}</p>
+                        <p>Size: {{ (note.file_size / 1024)|round(1) }} KB</p>
+                        <p>Added: {{ note.created_at.strftime('%Y-%m-%d %H:%M') }}</p>
+                    </div>
+                    <a href="{{ url_for('download_note', note_id=note.id) }}" class="download-btn">
+                        <span class="btn-icon">📥</span> Download
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        {% else %}
+            <p class="no-notes">No notes available yet. Be the first to upload!</p>
+        {% endif %}
+    </div>
+
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+2024-12-07 00:27:39,841 INFO: Portfolio startup [in /home/mubin/CascadeProjects/portfolio/app.py:22]
+2024-12-07 00:27:40,464 INFO: Portfolio startup [in /home/mubin/CascadeProjects/portfolio/app.py:22]
+2024-12-07 00:28:30,945 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:82]
+2024-12-07 00:32:11,589 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:28,394 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:28,876 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:29,031 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:29,206 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:29,361 ERROR: Error in home route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:29]
+2024-12-07 00:32:30,252 ERROR: Error in blog route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:62]
+2024-12-07 00:32:31,923 ERROR: Error in contact route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:53]
+2024-12-07 00:32:32,079 ERROR: Error in projects route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:45]
+2024-12-07 00:32:32,271 ERROR: Error in about route: Could not build url for endpoint 'chatbot'. Did you mean 'about' instead? [in /home/mubin/CascadeProjects/portfolio/app.py:37]
+2024-12-07 00:34:06,060 INFO: Portfolio startup [in /home/mubin/CascadeProjects/portfolio/app.py:27]
+2024-12-07 00:44:02,444 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:102]
+2024-12-07 00:44:06,917 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:102]
+2024-12-07 00:49:41,051 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:102]
+2024-12-07 00:49:44,553 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:102]
+2024-12-07 01:15:09,884 ERROR: Error in new_post route: new_post.html [in /home/mubin/CascadeProjects/portfolio/app.py:102]
+2024-12-07 01:39:17,671 INFO: Portfolio startup
+2024-12-07 01:39:26,636 INFO: Portfolio startup
+2024-12-07 01:39:27,157 INFO: Portfolio startup
+2024-12-07 01:40:59,138 INFO: Portfolio startup
+2024-12-07 01:43:29,264 INFO: Portfolio startup
+2024-12-07 01:43:38,987 INFO: Portfolio startup
+2024-12-07 01:46:35,759 INFO: Portfolio startup
+2024-12-07 01:46:47,418 INFO: Portfolio startup
+2024-12-07 01:47:03,026 ERROR: OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_api*****here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-12-07 01:47:08,040 ERROR: OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_api*****here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-12-07 01:48:14,866 INFO: Portfolio startup
+2024-12-07 01:49:15,432 ERROR: OpenAI API error: Error code: 401 - {'error': {'message': 'Incorrect API key provided: your_api*****here. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'param': None, 'code': 'invalid_api_key'}}
+2024-12-07 01:49:59,387 INFO: Portfolio startup
+2024-12-07 01:51:51,171 INFO: Portfolio startup
+2024-12-07 01:52:47,495 INFO: Portfolio startup
+2024-12-07 01:53:43,691 ERROR: Error in new_post route: new_post.html
+2024-12-07 01:55:28,783 INFO: Portfolio startup
+2024-12-07 01:56:27,588 ERROR: Error sending email: (530, b'5.7.0 Authentication Required. For more information, go to\n5.7.0  https://support.google.com/mail/?p=WantAuthError d9443c01a7336-215f8e3e640sm32372295ad.7 - gsmtp', 'emamimmubinkhan2006@gmail.com')
+2024-12-07 01:59:52,033 INFO: Portfolio startup
+2024-12-07 02:01:48,390 ERROR: Error in new_post route: new_post.html
+2024-12-07 02:01:51,010 ERROR: Error in new_post route: new_post.html
+2024-12-07 02:01:52,050 ERROR: Error in new_post route: new_post.html
+2024-12-07 02:01:54,168 ERROR: Error in new_post route: new_post.html
+2024-12-07 02:01:55,050 ERROR: Error in new_post route: new_post.html
+2024-12-07 02:04:02,042 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:05:23,546 INFO: Portfolio startup
+2024-12-07 02:06:41,441 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:06:43,440 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:06:43,616 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:06:43,805 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:07:13,604 INFO: Portfolio startup
+2024-12-07 02:08:24,275 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:08:25,286 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:08:25,479 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:08:25,653 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:08:25,844 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:10:09,660 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:10:10,766 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:10:11,066 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:12:49,654 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:13:34,147 INFO: Portfolio startup
+2024-12-07 02:13:46,957 ERROR: Error in view_post route: view_post.html
+2024-12-07 02:14:50,876 INFO: Portfolio startup
+2024-12-07 02:15:23,821 INFO: Portfolio startup

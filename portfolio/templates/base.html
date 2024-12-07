@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - JIMU</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="matrix-background"></canvas>
+    <nav>
+        <div class="nav-container">
+            <a href="{{ url_for('home') }}" class="logo">
+                <img src="{{ url_for('static', filename='icons/logo.svg') }}" alt="Logo" class="nav-icon">
+                JIMU
+            </a>
+            <ul class="nav-links">
+                <li>
+                    <a href="{{ url_for('home') }}" class="{{ 'active' if request.endpoint == 'home' }}" title="Home">
+                        <img src="{{ url_for('static', filename='icons/home.svg') }}" alt="Home" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('about') }}" class="{{ 'active' if request.endpoint == 'about' }}" title="About">
+                        <img src="{{ url_for('static', filename='icons/about.svg') }}" alt="About" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('projects') }}" class="{{ 'active' if request.endpoint == 'projects' }}" title="Projects">
+                        <img src="{{ url_for('static', filename='icons/projects.svg') }}" alt="Projects" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('contact') }}" class="{{ 'active' if request.endpoint == 'contact' }}" title="Contact">
+                        <img src="{{ url_for('static', filename='icons/contact.svg') }}" alt="Contact" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('blog') }}" class="{{ 'active' if request.endpoint == 'blog' }}" title="Blog">
+                        <img src="{{ url_for('static', filename='icons/blog.svg') }}" alt="Blog" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('notes') }}" class="{{ 'active' if request.endpoint == 'notes' }}" title="Notes">
+                        <img src="{{ url_for('static', filename='icons/notes.svg') }}" alt="Notes" class="nav-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ url_for('chatbot') }}" class="{{ 'active' if request.endpoint == 'chatbot' }}" title="AI Chatbot" class="chatbot-link">
+                        <img src="{{ url_for('static', filename='icons/chatbot.svg') }}" alt="AI Chatbot" class="nav-icon">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2023 JIMU. All rights reserved.</p>
+    </footer>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/matrix.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+</body>
+</html>

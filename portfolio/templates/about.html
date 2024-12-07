@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block content %}
+<div class="about-section">
+    <canvas class="matrix-rain"></canvas>
+    
+    <div class="about-header">
+        <h1 class="glow-text"></h1>
+        <div class="header-line"></div>
+    </div>
+
+    <div class="about-content">
+        <div class="profile-section">
+            <div class="profile-card" data-tilt>
+                <div class="profile-image">
+                    <div class="profile-placeholder">MK</div>
+                    <div class="profile-glow"></div>
+                </div>
+                <h2 class="glow-text typing-text">Who I Am</h2>
+                <p class="bio-text">I am a passionate software developer with expertise in web development and problem-solving. My journey in technology has been driven by curiosity and a desire to create impactful solutions.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                        <span class="link-hover-text">GitHub</span>
+                    </a>
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="link-hover-text">LinkedIn</span>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span class="link-hover-text">Twitter</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="skills-section">
+            <h2 class="glow-text section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="90%">
+                            <div class="skill-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="80%">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="95%">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML/CSS</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="85%">
+                            <div class="skill-header">
+                                <span class="skill-name">Flask</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75%">
+                            <div class="skill-header">
+                                <span class="skill-name">React</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skill-items">
+                        <div class="skill-item" data-skill="88%">
+                            <div class="skill-header">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75%">
+                            <div class="skill-header">
+                                <span class="skill-name">Database Management</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <h2 class="glow-text section-title">Experience & Projects</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Portfolio Website</h3>
+                        <span class="timeline-date">2024</span>
+                        <p>Developed a personal portfolio website using Flask, featuring a matrix-themed design, blog system, and chatbot integration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">SQLAlchemy</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>AI Chat Application</h3>
+                        <span class="timeline-date">2023</span>
+                        <p>Built an AI-powered chat application integrating OpenAI's GPT model for intelligent conversations.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenAI API</span>
+                            <span class="tech-tag">WebSocket</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add Font Awesome for social icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Add Vanilla-tilt.js for 3D hover effect -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+<!-- Add custom about page JavaScript -->
+<script src="{{ url_for('static', filename='js/about.js') }}"></script>
+{% endblock %}

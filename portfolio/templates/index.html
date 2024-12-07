@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="coding-animation">
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="terminal-buttons">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="terminal-title">JIMU.exe</div>
+        </div>
+        <div class="terminal-content">
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">initiating_system</span>
+            </div>
+            <div class="line">
+                <span class="prompt">></span>
+                <span class="response">Loading modules...</span>
+            </div>
+            <div class="line">
+                <span class="prompt">></span>
+                <span class="response">Compiling experience.js</span>
+            </div>
+            <div class="line">
+                <span class="prompt">></span>
+                <span class="response">Deploying skills.py</span>
+            </div>
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">status_check</span>
+            </div>
+            <div class="line">
+                <span class="prompt">></span>
+                <span class="response">All systems operational</span>
+            </div>
+            <div class="line">
+                <span class="prompt">$</span>
+                <span class="command">welcome_visitor</span>
+            </div>
+            <div class="matrix-rain"></div>
+        </div>
+    </div>
+</div>
+
+<section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of project 1</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of project 2</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Description of project 3</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
